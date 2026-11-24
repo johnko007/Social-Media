@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <link rel="icon" type="image/x-icon" href="img/talknote.jpg">
+    <title>Talknote</title>
+    <style>
+        input[type="date"] {
+        width: 100%;
+        max-width: 400px;
+        padding: 0.625rem 0.75rem;
+        font-size: 0.95rem;
+        font-family: inherit;
+        color: white;
+        border: 1px solid #750cff;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        }
+
+        input[type="date"] {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.95rem;
+        font-family: inherit;
+        color: white;
+        border: 1px solid #750cff; 
+        border-radius: 0.5rem;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        /* Turns a dark default icon into a bright purple close to #750cff */
+        filter: invert(17%) sepia(98%) saturate(5850%) hue-rotate(268deg) brightness(96%) contrast(106%);
+        }
+
+    </style>
+</head>
+<body class="bg-black">
+    <div class="m-auto w-100 px-7 py-25">
+        <a href="create-new-acc.html">
+            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-9 h-9 text-[#750cff] mb-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+        </a>
+
+        <h3 class="text-[20px] font-medium text-white mb-5">Date of Birth</h3>
+        <!-- <input type="text" class="border-2 border-[#750cff] rounded-[10px] w-full p-2 mb-5 text-white"> -->
+        <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            min="1920-01-01" 
+            max="2500-12-31" 
+            required 
+        />
+        <button class="bg-[#750cff] py-3 px-3 w-full rounded-2xl text-white hover:bg-[#862ef8] active:bg-[#750cff] cursor-pointer" onclick="document.location='create-new-acc3.html'"> Continue</button>
+    </div>
+
+    
+</body>
+</html>

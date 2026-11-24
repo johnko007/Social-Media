@@ -3,34 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/output.css" rel="stylesheet"> 
-  <!-- <style>
-    body{
-      color: none;
-    }
-  </style> -->
+  <link href="/output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/talknote.jpg">
+  <title> Talknote</title>
 </head>
-<body class="py-10">
+<body class="py-10 bg-black">
     <div class="m-auto">
-        <h1 class="text-[#1877F2] text-center font-bold font-sans text-[48px] mb-20">Talknote</h1>
+        <h1 class="text-[#750cff] text-center font-bold font-sans text-[48px] mb-20">Talknote</h1>
 
         <div class="px-7 m-auto w-100">
-             <label for="mobile-number-email" class="text-[20px]">Mobile number or email</label>
-             <input type="text" id="mobile-number-email" 
-             class="border-2 border-[#1877F2] 
+             <label for="email" class="text-[20px] text-white">Your Email</label>
+             <input type="text" id="email" 
+             class="border-2 border-[#750cff] 
              rounded-[10px] w-full
-             h-10 p-3 mb-5">
+             h-10 p-3 mb-5 text-white">
 
-             <label for="password" class="text-[20px]">Password</label>
+             <label for="password" class="text-[20px] text-white">Password</label>
              <input type="password" id="password" 
-             class="border-2 border-[#1877F2] 
+             class="border-2 border-[#750cff] 
              rounded-[10px] w-full 
-             h-10 p-3 mb-6">
+             h-10 p-3 mb-6 text-white">
 
-             <button class="inline-block bg-[#1877F2] text-white py-3 px-7 rounded-[5px] hover:bg-[rgb(5,100,193)] active:bg-[#1877F2] cursor-pointer"> Log in </button>
-             <a href="#" class="float-right mt-3">Forgot password?</a>
+             <button class="inline-block bg-[#750cff] text-white py-3 px-7 rounded-4xl hover:bg-[#862ef8] active:bg-[#750cff] cursor-pointer" onclick="document.location='news-feed.html'"> Log in </button>
+             <a href="forgot-pass.html" class="float-right mt-3 text-white">Forgot password?</a>
         
-             <button class="block m-auto bg-[#1877F2] rounded-2xl text-white py-3 px-3 w-full mt-20 hover:bg-[rgb(5,100,193)] active:bg-[#1877F2] cursor-pointer">Create new account</button>
+             <button class="block m-auto bg-[#750cff] rounded-2xl text-white py-3 px-3 w-full mt-20 hover:bg-[#862ef8] active:bg-[#750cff] cursor-pointer" onclick="document.location='create-new-acc.html'">Create new account</button>
         </div>
     </div>
 
